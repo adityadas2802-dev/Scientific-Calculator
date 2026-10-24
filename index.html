@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="NovaCalc is a free scientific calculator for quick, accurate calculations.">
+  <title>NovaCalc — Scientific Calculator</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site">
+    <nav><a class="brand" href="./">NOVA<span>CALC</span></a><span>Scientific calculator · always free</span></nav>
+    <div class="hero">
+      <section class="intro"><p class="eyebrow">PRECISION, SIMPLIFIED</p><h1>Every calculation, beautifully clear.</h1><p class="lead">A fast, distraction-free scientific calculator for everyday math, schoolwork, and technical problem solving.</p>
+        <div class="tips"><div><b>Keyboard ready</b>Type expressions and press Enter.</div><div><b>Angle modes</b>Switch instantly between degrees and radians.</div><div><b>Essential functions</b>Trigonometry, logs, powers, roots, and more.</div></div>
+      </section>
+      <main class="calculator" aria-label="Scientific calculator">
+        <header><span>SCIENTIFIC</span><span class="badge" id="angle-badge">DEG</span></header>
+        <section class="screen"><div id="history">Ready</div><input id="display" value="0" aria-label="Calculator display" inputmode="decimal" autocomplete="off"></section>
+        <div class="mode"><button class="active" data-angle="deg">Degrees</button><button data-angle="rad">Radians</button></div>
+        <section class="keys" id="keys">
+          <button class="fn" data-action="sin">sin</button><button class="fn" data-action="cos">cos</button><button class="fn" data-action="tan">tan</button><button class="fn" data-action="log">log</button><button class="fn" data-action="ln">ln</button>
+          <button class="fn" data-action="asin">sin⁻¹</button><button class="fn" data-action="acos">cos⁻¹</button><button class="fn" data-action="atan">tan⁻¹</button><button class="fn" data-value="Math.PI">π</button><button class="fn" data-value="Math.E">e</button>
+          <button class="danger" data-action="clear">AC</button><button class="danger" data-action="backspace">⌫</button><button class="fn" data-action="square">x²</button><button class="fn" data-value="**">xʸ</button><button class="operator" data-value="/">÷</button>
+          <button data-value="7">7</button><button data-value="8">8</button><button data-value="9">9</button><button class="fn" data-action="sqrt">√</button><button class="operator" data-value="*">×</button>
+          <button data-value="4">4</button><button data-value="5">5</button><button data-value="6">6</button><button class="fn" data-action="factorial">n!</button><button class="operator" data-value="-">−</button>
+          <button data-value="1">1</button><button data-value="2">2</button><button data-value="3">3</button><button data-value="(">(</button><button class="operator" data-value="+">+</button>
+          <button class="wide" data-value="0">0</button><button data-value=".">.</button><button data-value=")">)</button><button class="equals" data-action="equals">=</button>
+        </section>
+      </main>
+    </div>
+  </div><script src="script.js"></script>
+</body></html>
